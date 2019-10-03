@@ -1,0 +1,421 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2project>
+    <name>New project</name>
+    <description></description>
+    <version>1.0.0.0</version>
+    <author></author>
+    <author-email></author-email>
+    <author-website>http://</author-website>
+    <app-id>com.mycompany.myapp</app-id>
+    <unique-id>2m2oqhlgof90t</unique-id>
+    <saved-with-version>27200</saved-with-version>
+    <used-plugins>
+        <plugin author="Scirra" id="Audio" version="1">Audio</plugin>
+        <plugin author="Scirra" id="Keyboard" version="1">Keyboard</plugin>
+        <plugin author="Scirra" id="Mouse" version="1">Mouse</plugin>
+        <plugin author="Scirra" id="Particles" version="1">Particles</plugin>
+        <plugin author="Scirra" id="Sprite" version="1">Sprite</plugin>
+        <plugin author="Scirra" id="Text" version="1">Text</plugin>
+    </used-plugins>
+    <used-behaviors>
+        <behavior author="Scirra" id="Bullet" version="1">Bullet</behavior>
+        <behavior author="Scirra" id="EightDir" version="1">8 Direction</behavior>
+        <behavior author="Scirra" id="bound" version="1">Bound to layout</behavior>
+    </used-behaviors>
+    <used-effects />
+    <configurations>
+        <configuration exporter-descname="HTML5" exporter-id="html5" name="HTML5" />
+    </configurations>
+    <window-size>
+        <width>480</width>
+        <height>640</height>
+    </window-size>
+    <pixel-rounding>0</pixel-rounding>
+    <preview-effects>1</preview-effects>
+    <first-layout>Menu</first-layout>
+    <use-loader-layout>0</use-loader-layout>
+    <configuration-settings>
+        <prop name="Clear background">Yes</prop>
+        <prop name="Enable WebGL">On</prop>
+        <prop name="Fullscreen in browser">Letterbox scale</prop>
+        <prop name="Fullscreen scaling">High quality</prop>
+        <prop name="Loader style">Progress bar &amp; logo</prop>
+        <prop name="Orientations">Portrait</prop>
+        <prop name="Pause on unfocus">No</prop>
+        <prop name="Physics engine">Box2D asm.js</prop>
+        <prop name="Preview browser">(default)</prop>
+        <prop name="Sampling">Linear</prop>
+        <prop name="Use high-DPI display">Yes</prop>
+    </configuration-settings>
+    <object-folder>
+        <object-type name="Player" sid="900815747208400">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="8Direction" sid="915170488543532">
+                    <behavior id="EightDir" />
+                </behavior-type>
+                <behavior-type name="BoundToLayout" sid="205783880453893">
+                    <behavior id="bound" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="2" loop="1" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="688298904480057" speed="10">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="E:\Bulk Program Files\Kilkerko\Downloads\WallFall\ship_forward_0.png">
+                        <collision-poly>
+                            <point x="0.498054" y="0.0348837" />
+                            <point x="0.968872" y="0.546512" />
+                            <point x="0.498054" y="0.744186" />
+                            <point x="0.0311284" y="0.546511" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="E:\Bulk Program Files\Kilkerko\Downloads\WallFall\ship_forward_1.png">
+                        <collision-poly>
+                            <point x="0.498054" y="0.0348837" />
+                            <point x="0.968872" y="0.546512" />
+                            <point x="0.498054" y="0.744186" />
+                            <point x="0.0311284" y="0.546511" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+                <animation framecount="2" loop="1" name="Left" pingpong="0" repeatcount="1" repeatto="0" sid="201611079909661" speed="10">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.498182" original-source="E:\Bulk Program Files\Kilkerko\Downloads\WallFall\ship_left_0.png">
+                        <collision-poly>
+                            <point x="0.336576" y="0.04" />
+                            <point x="0.978599" y="0.68" />
+                            <point x="0.336576" y="0.629091" />
+                            <point x="0.0175097" y="0.36" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.498182" original-source="E:\Bulk Program Files\Kilkerko\Downloads\WallFall\ship_left_1.png">
+                        <collision-poly>
+                            <point x="0.336576" y="0.04" />
+                            <point x="0.978599" y="0.68" />
+                            <point x="0.336576" y="0.629091" />
+                            <point x="0.0175097" y="0.36" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+                <animation framecount="8" loop="1" name="HalfLeft" pingpong="0" repeatcount="1" repeatto="0" sid="131054950768763" speed="10">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="E:\Bulk Program Files\Kilkerko\Downloads\WallFall\ship_halfLeft_0.png">
+                        <collision-poly>
+                            <point x="0.424125" y="0.0402685" />
+                            <point x="0.976654" y="0.550336" />
+                            <point x="0.424124" y="0.744966" />
+                            <point x="0.0116731" y="0.543624" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.500975" hotspotY="0.5" original-source="E:\Bulk Program Files\Kilkerko\Downloads\WallFall\ship_halfLeft_1.png">
+                        <collision-poly>
+                            <point x="0.424125" y="0.0402685" />
+                            <point x="0.976654" y="0.550336" />
+                            <point x="0.424124" y="0.744966" />
+                            <point x="0.0116731" y="0.543624" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5">
+                        <collision-poly>
+                            <point x="0.424125" y="0.0402685" />
+                            <point x="0.976654" y="0.550336" />
+                            <point x="0.424124" y="0.744966" />
+                            <point x="0.0116731" y="0.543624" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.500975" hotspotY="0.5">
+                        <collision-poly>
+                            <point x="0.424125" y="0.0402685" />
+                            <point x="0.976654" y="0.550336" />
+                            <point x="0.424124" y="0.744966" />
+                            <point x="0.0116731" y="0.543624" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5">
+                        <collision-poly>
+                            <point x="0.424125" y="0.0402685" />
+                            <point x="0.976654" y="0.550336" />
+                            <point x="0.424124" y="0.744966" />
+                            <point x="0.0116731" y="0.543624" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.500975" hotspotY="0.5">
+                        <collision-poly>
+                            <point x="0.424125" y="0.0402685" />
+                            <point x="0.976654" y="0.550336" />
+                            <point x="0.424124" y="0.744966" />
+                            <point x="0.0116731" y="0.543624" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5">
+                        <collision-poly>
+                            <point x="0.424125" y="0.0402685" />
+                            <point x="0.976654" y="0.550336" />
+                            <point x="0.424124" y="0.744966" />
+                            <point x="0.0116731" y="0.543624" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.500975" hotspotY="0.5">
+                        <collision-poly>
+                            <point x="0.424125" y="0.0402685" />
+                            <point x="0.976654" y="0.550336" />
+                            <point x="0.424124" y="0.744966" />
+                            <point x="0.0116731" y="0.543624" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+                <animation framecount="2" loop="1" name="Right" pingpong="0" repeatcount="1" repeatto="0" sid="343698437279611" speed="10">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.498182" original-source="E:\Bulk Program Files\Kilkerko\Downloads\WallFall\ship_right_0.png">
+                        <collision-poly>
+                            <point x="0.657588" y="0.0436364" />
+                            <point x="0.984436" y="0.356364" />
+                            <point x="0.66537" y="0.636364" />
+                            <point x="0.0233463" y="0.68" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.498182" original-source="E:\Bulk Program Files\Kilkerko\Downloads\WallFall\ship_right_1.png">
+                        <collision-poly>
+                            <point x="0.657588" y="0.0436364" />
+                            <point x="0.984436" y="0.356364" />
+                            <point x="0.66537" y="0.636364" />
+                            <point x="0.0233463" y="0.68" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+                <animation framecount="2" loop="1" name="HalfRight" pingpong="0" repeatcount="1" repeatto="0" sid="692918350062495" speed="10">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="E:\Bulk Program Files\Kilkerko\Downloads\WallFall\ship_halfRight_0.png">
+                        <collision-poly>
+                            <point x="0.568093" y="0.0469799" />
+                            <point x="0.972763" y="0.536913" />
+                            <point x="0.568093" y="0.738254" />
+                            <point x="0.0311284" y="0.543624" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="E:\Bulk Program Files\Kilkerko\Downloads\WallFall\ship_halfRight_1.png">
+                        <collision-poly>
+                            <point x="0.568093" y="0.0469799" />
+                            <point x="0.972763" y="0.536913" />
+                            <point x="0.568093" y="0.738254" />
+                            <point x="0.0311284" y="0.543624" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Wall" sid="680993021383215">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Bullet" sid="356290111113926">
+                    <behavior id="Bullet" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Easy" pingpong="0" repeatcount="1" repeatto="0" sid="772201567250736" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.501027" original-source="E:\Bulk Program Files\Kilkerko\Downloads\WallFall\wall_easy.png" />
+                </animation>
+                <animation framecount="1" loop="0" name="Medium" pingpong="0" repeatcount="1" repeatto="0" sid="208739988318709" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.501027" original-source="E:\Bulk Program Files\Kilkerko\Downloads\WallFall\wall_medium.png" />
+                </animation>
+                <animation framecount="1" loop="0" name="Hard" pingpong="0" repeatcount="1" repeatto="0" sid="960990917483941" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.501027" original-source="E:\Bulk Program Files\Kilkerko\Downloads\WallFall\wall_hard.png" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Coin" sid="373039106143508">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Bullet" sid="277332215745927">
+                    <behavior id="Bullet" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="2" loop="1" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="966286231659041" speed="5">
+                    <frame duration="1" hotspotX="0.497738" hotspotY="0.497738" original-source="E:\Bulk Program Files\Kilkerko\Downloads\WallFall\coin_0.png">
+                        <collision-poly>
+                            <point x="0.149321" y="0.149321" />
+                            <point x="0.497738" y="0.00452489" />
+                            <point x="0.850679" y="0.144796" />
+                            <point x="0.995475" y="0.497738" />
+                            <point x="0.850679" y="0.850679" />
+                            <point x="0.497738" y="0.995475" />
+                            <point x="0.144796" y="0.850679" />
+                            <point x="0.00452489" y="0.497738" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.497738" hotspotY="0.502262" original-source="E:\Bulk Program Files\Kilkerko\Downloads\WallFall\coin_1.png">
+                        <collision-poly>
+                            <point x="0.149321" y="0.149321" />
+                            <point x="0.497738" y="0.00452489" />
+                            <point x="0.850679" y="0.144796" />
+                            <point x="0.995475" y="0.497738" />
+                            <point x="0.850679" y="0.850679" />
+                            <point x="0.497738" y="0.995475" />
+                            <point x="0.144796" y="0.850679" />
+                            <point x="0.00452489" y="0.497738" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Score" sid="553370110565359">
+            <plugin id="Text" />
+        </object-type>
+        <object-type name="Keyboard" sid="761811363833723">
+            <plugin id="Keyboard" />
+        </object-type>
+        <object-type name="Multiplyer" sid="205297597330149">
+            <plugin id="Text" />
+        </object-type>
+        <object-type name="Side" sid="100334036125606">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Menu" pingpong="0" repeatcount="1" repeatto="0" sid="443168269241267" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.501027" original-source="E:\Bulk Program Files\Kilkerko\Downloads\WallFall\side_menu.png" />
+                </animation>
+                <animation framecount="1" loop="0" name="Easy" pingpong="0" repeatcount="1" repeatto="0" sid="616073193228767" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.501027" original-source="E:\Bulk Program Files\Kilkerko\Downloads\WallFall\wall_easy.png" />
+                </animation>
+                <animation framecount="1" loop="0" name="Medium" pingpong="0" repeatcount="1" repeatto="0" sid="382187079778372" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.501027" original-source="E:\Bulk Program Files\Kilkerko\Downloads\WallFall\wall_medium.png" />
+                </animation>
+                <animation framecount="1" loop="0" name="Hard" pingpong="0" repeatcount="1" repeatto="0" sid="779867875353790" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.501027" original-source="E:\Bulk Program Files\Kilkerko\Downloads\WallFall\wall_hard.png" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="SideOverlap" sid="663580723473554">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="368850791731248" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.501027" original-source="E:\Bulk Program Files\Kilkerko\Downloads\WallFall\side.png" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="EasyButton" sid="285033160515259">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="624853095341156" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="E:\Bulk Program Files\Kilkerko\Downloads\WallFall\button_0.png" />
+                </animation>
+                <animation framecount="2" loop="1" name="Flash" pingpong="0" repeatcount="1" repeatto="0" sid="741477934428824" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="E:\Bulk Program Files\Kilkerko\Downloads\WallFall\button_1.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="E:\Bulk Program Files\Kilkerko\Downloads\WallFall\button_0.png" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="MenuText" sid="482913197149974">
+            <plugin id="Text" />
+        </object-type>
+        <object-type name="Mouse" sid="423313066190600">
+            <plugin id="Mouse" />
+        </object-type>
+        <object-type name="MediumButton" sid="100017035061894">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="889850534791447" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="E:\Bulk Program Files\Kilkerko\Downloads\WallFall\button_0.png" />
+                </animation>
+                <animation framecount="2" loop="1" name="Flash" pingpong="0" repeatcount="1" repeatto="0" sid="641639012802351" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="E:\Bulk Program Files\Kilkerko\Downloads\WallFall\button_1.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="E:\Bulk Program Files\Kilkerko\Downloads\WallFall\button_0.png" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="HardButton" sid="817847487327602">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="779665957875973" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="E:\Bulk Program Files\Kilkerko\Downloads\WallFall\button_0.png" />
+                </animation>
+                <animation framecount="2" loop="1" name="Flash" pingpong="0" repeatcount="1" repeatto="0" sid="529405676591833" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="E:\Bulk Program Files\Kilkerko\Downloads\WallFall\button_1.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="E:\Bulk Program Files\Kilkerko\Downloads\WallFall\button_0.png" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Audio" sid="647319176254334">
+            <plugin id="Audio" />
+        </object-type>
+        <object-type name="CoinParticles" sid="747158073447265">
+            <plugin id="Particles" />
+            <texture original-source="E:\Bulk Program Files\Kilkerko\Downloads\WallFall\coin_particles.png" />
+        </object-type>
+        <object-type name="ShipParticles" sid="180329258807489">
+            <plugin id="Particles" />
+            <texture original-source="E:\Bulk Program Files\Kilkerko\Downloads\WallFall\ship_particles.png" />
+        </object-type>
+        <object-type name="Background" sid="366208940875934">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Bullet" sid="126359609727835">
+                    <behavior id="Bullet" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="204926413148307" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="E:\Bulk Program Files\Kilkerko\Downloads\WallFall\background.png" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Background2" sid="758957267687450">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Bullet" sid="792690710813701">
+                    <behavior id="Bullet" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="720502910691899" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="E:\Bulk Program Files\Kilkerko\Downloads\WallFall\background.png" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="EndText" sid="587589265356823">
+            <plugin id="Text" />
+        </object-type>
+    </object-folder>
+    <families />
+    <layout-folder>
+        <layout>Game.xml</layout>
+        <layout>Menu.xml</layout>
+    </layout-folder>
+    <event-folder>
+        <event-sheet>Event sheet 1.xml</event-sheet>
+    </event-folder>
+    <global-instances>
+        <global-instance type="Keyboard" uid="6" />
+        <global-instance type="Mouse" uid="23" />
+        <global-instance type="Audio" uid="11">
+            <properties>
+                <timescale-audio>Off</timescale-audio>
+                <saveload>All</saveload>
+                <play-in-background>No</play-in-background>
+                <positioned-audio></positioned-audio>
+                <panning-model>HRTF</panning-model>
+                <distance-model>Inverse</distance-model>
+                <listener-z-height>600</listener-z-height>
+                <reference-distance>600</reference-distance>
+                <maximum-distance>10000</maximum-distance>
+                <roll-off-factor>1</roll-off-factor>
+            </properties>
+        </global-instance>
+    </global-instances>
+    <sounds-folder>
+        <file name="button_click.m4a" />
+        <file name="button_click.ogg" />
+        <file name="button_hover.m4a" />
+        <file name="button_hover.ogg" />
+        <file name="coin.m4a" />
+        <file name="coin.ogg" />
+        <file name="death.m4a" />
+        <file name="death.ogg" />
+    </sounds-folder>
+    <music-folder />
+    <files-folder>
+        <file-folder name="Icons">
+            <file name="icon-16.png" />
+            <file name="icon-32.png" />
+            <file name="icon-114.png" />
+            <file name="icon-128.png" />
+            <file name="icon-256.png" />
+            <file name="loading-logo.png" />
+        </file-folder>
+    </files-folder>
+</c2project>
